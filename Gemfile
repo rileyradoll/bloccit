@@ -16,6 +16,7 @@ ruby "2.2.1"
 
  group :development, :test do
    gem 'rspec-rails', '~> 3.0'
+   gem 'nyan-cat-formatter'
  end
 
  # Use SCSS for stylesheets
