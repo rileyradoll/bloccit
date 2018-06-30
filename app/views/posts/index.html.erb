@@ -1,5 +1,6 @@
-<h1>All Posts</h1>
-<%= button_to "New Post", new_post_path, :class => "btn btn-success", :method => :get %>
+<div id="posts-main">
+  <h1 id="all-posts-heading">All Posts</h1> <%= link_to "New Post", new_post_path(@post), class: 'btn btn-success', id: 'new-post-btn-index' %>
+</div>
 <% @posts.each do |post| %>
   <div class="media">
      <div class="media-body">

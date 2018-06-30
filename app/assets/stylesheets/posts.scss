@@ -1,3 +1,15 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#posts-main {
+  width: 245px;
+}
+#all-posts-heading {
+  margin: 0;
+  display: inline-block;
+}
+#new-post-btn-index {
+  margin-top: 5px;
+  margin-left: 0px;
+  float: right;
+}
