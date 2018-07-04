@@ -1,0 +1,20 @@
+<div id="topics-main">
+  <h1 id="topics-heading">Topics</h1> <%= link_to "New Topic", new_topic_path, class: 'btn btn-success', id: 'new-topic-btn-top' %>
+</div>
+
+<div class="row">
+  <div class="col-md-8">
+    <% @topics.each do |topic| %>
+      <div class="media">
+        <div class="media-body">
+          <h4 class="media-heading">
+            <%= link_to topic.name, topic %>
+          </h4>
+          <small>
+            <%= topic.description %>
+          </small>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
