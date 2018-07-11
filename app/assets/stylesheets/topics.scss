@@ -1,19 +1,29 @@
 // Place all the styles related to the Topics controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.checkbox {
-  margin: 20px;
+#new-checkbox {
+  margin: auto;
+}
+
+#edit-checkbox {
+  margin: auto;
 }
 
 #topics-main {
   width: 245px;
   margin-bottom: 1%;
 }
+
 #topics-heading {
   margin-right: 5px;
   display: inline-block;
 }
+
 #new-topic-btn-top {
   margin: 0%;
   margin-bottom: 5%;
+}
+
+#new-post-button {
+  margin-left: 20px;
 }
