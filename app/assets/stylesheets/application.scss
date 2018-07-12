@@ -18,6 +18,23 @@
 
 .nav {
   margin: 10px;
-  margin-top: 11px;
+  margin-top: 10px;
   padding-bottom: 4px;
+}
+
+li#current-user-name {
+  padding-right: 8px;
+  margin-top: 11px;
+  margin-right: 5px;
+}
+
+.gravatar {
+  margin-right: 5%;
+  margin-bottom: 5%;
+  padding-right: 2px;
+}
+
+h1 {
+  margin-right: 5px;
+  margin-bottom: 15px;
 }

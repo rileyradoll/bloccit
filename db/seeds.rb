@@ -8,7 +8,23 @@ require 'random_data'
     password: RandomData.random_sentence
   )
 end
+
 users = User.all
+
+# Create an admin user
+admin = User.create!(
+  name: 'Admin User',
+  email: 'admin@example.com',
+  password: 'helloworld',
+  role: 'admin'
+)
+
+# Create a member
+member = User.create!(
+  name: 'Member User',
+  email: 'member@example.com',
+  password: 'helloworld'
+)
 
 # Create topics
 15.times do
@@ -17,7 +33,6 @@ users = User.all
     description: RandomData.random_paragraph
   )
 end
-
 topics = Topic.all
 
 # Create Posts
@@ -32,18 +47,13 @@ end
 posts = Post.all
 
 # Create Comments
-100.times do
+50.times do
   Comment.create!(
     post: posts.sample,
     body: RandomData.random_paragraph
   )
 end
 
-user = User.first
-user.update_attributes!(
-  email: 'youremail.com',
-  password: 'helloworld'
-)
 
 puts "Seed finished"
 puts "#{User.count} users created"

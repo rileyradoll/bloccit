@@ -1,5 +1,10 @@
 <div id="topics-main">
-  <h1 id="topics-heading">Topics</h1> <%= link_to "New Topic", new_topic_path, class: 'btn btn-success', id: 'new-topic-btn-top' %>
+  <h1 id="topics-heading">Topics</h1>
+  <% if user_is_authorized_for_topics? %>
+    <div>
+      <%= link_to "New Topic", new_topic_path, class: 'btn btn-success', id: 'new-topic-btn-top' %>
+    </div>
+  <% end %>
 </div>
 
 <div class="row">
