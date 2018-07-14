@@ -5,8 +5,6 @@ class Post < ActiveRecord::Base
   has_many :votes, dependent: :destroy
 
   default_scope { order(rank: :desc) }
-  scope :ordered_by_title, -> { order(title: :desc) }
-  scope :ordered_by_reverse_created_at, -> { order(created_at: :asc) }
 
   validates :title, length: { minimum: 5 }, presence: true
   validates :body, length: { minimum: 20 }, presence: true
