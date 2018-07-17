@@ -17,6 +17,7 @@ ruby "2.2.1"
  group :development, :test do
    gem 'rspec-rails', '~> 3.0'
    gem 'shoulda'
+   gem 'factory_girl_rails', '~> 4.0'
    gem 'nyan-cat-formatter'
  end
 

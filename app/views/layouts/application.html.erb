@@ -18,7 +18,7 @@
           <%= image_tag avatar_url(current_user), class: :gravatar %>
         </li>
         <li id="current-user-name" class="pull-right">
-          <%= current_user.name %>
+          <%= link_to current_user.name, user_path(current_user) %>
         </li>
         <li class="pull-right">
           <%= link_to "Sign Out", session_path(current_user), class: 'sign-out', method: :delete %>
