@@ -24,4 +24,4 @@
 <%= user_comments_if_any(@user.comments) %>
 
 <h2>Favorites</h2>
-<%= render @user.favorited_posts %>
+<%= user_favorites_if_any(@user.favorites) %>
