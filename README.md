@@ -28,8 +28,8 @@ Users can sign up, create posts, comment on posts, vote on posts, favorite posts
 - Bootstrap
 
 #### Databases:
-- SQLite (Test, Development)
-- PostgreSQL (Production)
+- SQLite - Test, Development)
+- PostgreSQL - Production
 
 #### Tools and Gems:
 - BCrypt for secure passwords
