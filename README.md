@@ -2,7 +2,7 @@
 
 ### Bloccit is a Reddit inspired application
 
-Users can sign up, create posts, comment on posts, vote on posts, favorite posts and receive updates on their favorite posts via email.
+Users can sign up, create posts, comment on posts, vote on posts, favorite posts and receive updates on their favorited posts via email.
 
 [Demo Site](https://stark-oasis-86699.herokuapp.com/)
 
